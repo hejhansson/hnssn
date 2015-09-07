@@ -1,0 +1,117 @@
+/*----------------------------------------------------------------
+		PAGE
+-------------------------------------------------------------- */
+
+
+@include break-at($screen-sm) {
+	.body {
+		width: 100px;
+	}
+
+}
+
+
+.portfolio {
+	.col-md-6 {
+		padding: 0;
+	}
+
+	&_item {
+		padding: 0;
+		position: relative;
+		small {
+			position: absolute;
+		  top: 0;
+		  bottom: 0;
+		  left:0;
+		  right:0;
+		  margin: auto;
+		  width: 70%;
+		  height: 60%;
+			text-align: center;
+			z-index: 999;
+			color: $black;
+			display: none;
+			transition: all .2s;
+
+			a {
+				&:hover {
+					color: $black;
+					i {
+						color: $black;
+					}
+				}
+				i {
+					margin-left: 5px;
+				}
+			}
+
+			* {
+				color: $black;
+			}
+		}
+
+		&:hover {
+			small {
+				display: block;
+			}
+			.overlay {
+				transition: all .2s;
+				position: absolute;
+			  top: 9px;
+			  bottom: 27px;
+			  left: 14px;
+			  right: 14px;
+				background: rgba($white, .7);
+			}
+		}
+	}
+}
+
+
+.profil {
+	position: relative;
+
+
+	img {
+		width: 100%;
+		@media #{$sm} {
+			position: fixed;
+			top: 305px;
+			width: 148px;
+		}
+		@media #{$md} {
+			position: fixed;
+			top: 305px;
+			width: 190px;
+		}
+	}
+}
+p b {
+	font-size: 85%;
+	@media #{$sm} {
+		font-size: 100%;
+	}
+}
+
+
+.information {
+	position: relative;
+	&_item {
+		position: fixed;
+		width: 14%;
+
+		&__heading {
+			margin-top: 65px;
+		}
+	}
+
+}
+
+.cv {
+	ul {
+		width: 50%;
+		float: left;
+		display: inline-block;
+	}
+}

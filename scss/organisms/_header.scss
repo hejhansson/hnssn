@@ -1,0 +1,87 @@
+.site-header {
+	padding: $basePadding 0;
+	margin-bottom: -50px;
+	@media #{$sm} {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		background: white;
+		z-index: 9999;
+		margin-bottom: 0;
+	}
+
+	a, a:visited {
+		color: $black;
+		font-size: $baseFontSize - 2;
+		font-weight: 400;
+
+		@media #{$sm} {
+			font-size: $baseFontSize;
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.brand {
+		a, a:visited {
+			&:hover {
+				color: $linkHoverColor;
+			}
+		}
+	}
+
+	nav {
+
+		ul {
+			float: left;
+			margin-top: 15px;
+
+			@media #{$sm} {
+				margin-top: 0;
+			}
+
+			li {
+				margin: 0;
+				margin-right: 25px;
+
+				&.active {
+					a, a:visited {
+						border-bottom: 2px solid lighten($textGray, 12%);
+						&:hover {
+							border-bottom: 2px solid $linkHoverColor;
+						}
+					}
+				}
+
+				a, a:visited {
+					padding: 0;
+					color: $textGray;
+					&:hover {
+						color: $linkHoverColor;
+					}
+				}
+			}
+		}
+	}
+}
+
+.site-header-inverse {
+	@extend .site-header;
+	background: $siteHeaderBackgroundColor;
+	color: $siteHeaderFontColor;
+	border: none;
+
+	a,
+	a:visited {
+		text-decoration: none;
+
+		&:hover,
+  		&:focus {
+			text-decoration: none;
+			color: darken($white, 12.5%)!important;
+		}
+	}
+}
