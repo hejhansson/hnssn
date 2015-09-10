@@ -20,6 +20,27 @@
 		});
 	}
 
+	if(windowWidth > 980) {
+		var lastScrollTop = 0;
+		$(window).scroll(function(event){
+		   var st = $(this).scrollTop();
+		   if (st > lastScrollTop){
+		       console.log('down');
+					 $('.site-header .col-sm-3').css('width', '5%');
+					 $('.site-header .col-sm-3 a').html('AH');
+					//  $('.site-header .container').css('margin', '0 0 0 20px');
+
+		   } else {
+
+					// $('.site-header .container').css('margin', '0 auto');
+					setTimeout(function(){
+			      $('.site-header .col-sm-3 a').html('Alexander Hansson');
+					}, 200);
+					$('.site-header .col-sm-3').css('width', '25%');
+		   }
+		   lastScrollTop = st;
+		});
+	}
 
 
 

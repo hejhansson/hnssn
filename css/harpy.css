@@ -3619,6 +3619,14 @@ a img.aligncenter {
       background: white;
       z-index: 9999;
       margin-bottom: 0; } }
+  .site-header .col-sm-3, .site-header-inverse .col-sm-3 {
+    -webkit-transition: width .3s;
+    /* Safari */
+    transition: width .3s; }
+  .site-header .container, .site-header-inverse .container {
+    -webkit-transition: all .2s;
+    /* Safari */
+    transition: all .2s; }
   .site-header a, .site-header-inverse a, .site-header a:visited, .site-header-inverse a:visited {
     color: #16161d;
     font-size: 16px;

@@ -1,14 +1,25 @@
 .site-header {
 	padding: $basePadding 0;
 	margin-bottom: -50px;
-	@media #{$sm} {
-		position: fixed;
-		left: 0;
-		right: 0;
-		top: 0;
-		background: white;
-		z-index: 9999;
-		margin-bottom: 0;
+
+		@media #{$sm} {
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+			background: white;
+			z-index: 9999;
+			margin-bottom: 0;
+		}
+
+	.col-sm-3 {
+		-webkit-transition: width .3s; /* Safari */
+  	transition: width .3s;
+	}
+
+	.container {
+		-webkit-transition: all .2s; /* Safari */
+  	transition: all .2s;
 	}
 
 	a, a:visited {
