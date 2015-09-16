@@ -4,7 +4,7 @@
 -------------------------------------------------------------- */
 
 body {
-  font-family: Brandon Text, $primaryFont, Helvetica, Arial, sans-serif;
+  font-family: 'Brandon Text', $primaryFont, Helvetica, Arial, sans-serif;
   color: $textColor;
 }
 
@@ -29,14 +29,14 @@ h4,
 .h4 {
   margin: $baseMargin 0 $baseMargin/4 0;
   line-height: 1.3;
-  color: $headingColor;
+  color: #202020;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-weight: $fontNormal;
+    font-weight: 400;
 }
 
 h1>a,
