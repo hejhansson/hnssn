@@ -86,7 +86,7 @@ p,
   margin: 0 0 16px 0;
 
   @media #{$sm} {
-    font-size: $baseFontSize;
+    font-size: $baseFontSize + 1;
   }
 
 

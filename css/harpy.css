@@ -447,12 +447,6 @@ td, th {
   font-style: italic;
   src: url("/fonts/brandon_text_thin_italic.svg#brandon_textthin_italic") format("svg"), url("/fonts/brandon_text_thin_italic.woff") format("woff"); }
 
-@font-face {
-  font-family: "Akzidenz Grotesk Bold";
-  font-weight: 200;
-  font-style: italic;
-  src: url("/fonts/akzidenz.grotesk.bold.ttf") format("tff"); }
-
 /*----------------------------------------------------------------
     TYPE
     TODO: hur type ska bete sig på mindre skärmar
@@ -524,7 +518,7 @@ p, .p {
   margin: 0 0 16px 0; }
   @media (min-width: 768px) {
     p, .p {
-      font-size: 18px; } }
+      font-size: 19px; } }
   p:last-child, .p:last-child {
     margin: 0; }
 
