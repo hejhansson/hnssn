@@ -28,12 +28,12 @@
 		       console.log('down');
 					 $('.site-header .col-sm-3').css('width', '5%');
 					 $('.site-header .col-sm-3 a').html('AH');
-					//  $('.site-header .container').css('margin', '0 0 0 20px');
+					 $('.site-header').addClass('lighter');
 
 		   } else {
 
-					// $('.site-header .container').css('margin', '0 auto');
 					setTimeout(function(){
+						$('.site-header').removeClass('lighter');
 			      $('.site-header .col-sm-3 a').html('Alexander Hansson');
 					}, 200);
 					$('.site-header .col-sm-3').css('width', '25%');
