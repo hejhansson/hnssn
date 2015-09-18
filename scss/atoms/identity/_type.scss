@@ -4,8 +4,8 @@
 -------------------------------------------------------------- */
 
 body {
-  font-family: 'Brandon Text', $primaryFont, Helvetica, Arial, sans-serif;
-  color: $textColor;
+  font-family: "C", Helvetica, Arial, sans-serif;
+  color: lighten($textColor, 10%);
 }
 
 .tc {text-align: center; }
