@@ -57,11 +57,13 @@
 
 			li {
 				margin: 0;
-				margin-right: 25px;
+				margin-right: 35px;
 
 				&.active {
 					a, a:visited {
 						border-bottom: 2px solid lighten($textGray, 12%);
+						&:before {
+						}
 						&:hover {
 							border-bottom: 2px solid $linkHoverColor;
 						}

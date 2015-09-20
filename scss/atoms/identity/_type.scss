@@ -4,7 +4,7 @@
 -------------------------------------------------------------- */
 
 body {
-  font-family: "C", Helvetica, Arial, sans-serif;
+  font-family: 'A', Helvetica, Arial, sans-serif;
   color: lighten($textColor, 10%);
 }
 
@@ -16,7 +16,7 @@ body {
 .italic {font-style: italic; }
 
 .uppercase {text-transform: uppercase; }
-.lowercase {text-transform: lowecase; }
+.lowercase {text-transform: lowercase; }
 .capitalize {text-transform: capitalize; }
 
 h1,
@@ -29,7 +29,8 @@ h4,
 .h4 {
   margin: $baseMargin 0 $baseMargin/4 0;
   line-height: 1.3;
-  color: #202020;
+  letter-spacing: -.5px;
+  color: $black;
 }
 
 h1,
@@ -74,7 +75,6 @@ h3,
 h4,
 .h4 {
   font-size: $fontH4;
-
 }
 
 p,
@@ -84,6 +84,7 @@ p,
   font-weight: $fontNormal;
   display: block;
   margin: 0 0 16px 0;
+  letter-spacing: -.3px;
 
   @media #{$sm} {
     font-size: $baseFontSize + 1;
