@@ -32,7 +32,7 @@
 	.bg-lime#{$suffix} {
 		background: $lime;
 	}
-	
+
 	.bg-yellow#{$suffix} {
 		background: $yellow;
 	}
@@ -40,7 +40,7 @@
 	.bg-orange#{$suffix} {
 		background: $orange;
 	}
-	
+
 	.bg-red#{$suffix} {
 		background: $red;
 	}
@@ -70,7 +70,8 @@
 	}
 
 	.bg-primary#{$suffix} {
-		background: $primaryColor;
+		background: lighten($primaryColor, 27%);
+		padding: 3px 4px 5px 5px;
 	}
 }
 

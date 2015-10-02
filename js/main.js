@@ -20,7 +20,7 @@
 		});
 	}
 
-	if(windowWidth > 980) {
+	if(windowWidth > 11980) {
 		var lastScrollTop = 0;
 		$(window).scroll(function(event){
 		   var st = $(this).scrollTop();

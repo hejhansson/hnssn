@@ -2043,7 +2043,8 @@ a, a:visited {
   background: #3d464d; }
 
 .bg-primary {
-  background: #F06D6F; }
+  background: #fdeaea;
+  padding: 3px 4px 5px 5px; }
 
 .bg-none-xs {
   background: none; }
@@ -2094,7 +2095,8 @@ a, a:visited {
   background: #3d464d; }
 
 .bg-primary-xs {
-  background: #F06D6F; }
+  background: #fdeaea;
+  padding: 3px 4px 5px 5px; }
 
 @media (min-width: 768px) {
   .bg-none-sm {
@@ -2130,7 +2132,8 @@ a, a:visited {
   .bg-black-sm {
     background: #3d464d; }
   .bg-primary-sm {
-    background: #F06D6F; } }
+    background: #fdeaea;
+    padding: 3px 4px 5px 5px; } }
 
 @media (min-width: 992px) {
   .bg-none-md {
@@ -2166,7 +2169,8 @@ a, a:visited {
   .bg-black-md {
     background: #3d464d; }
   .bg-primary-md {
-    background: #F06D6F; } }
+    background: #fdeaea;
+    padding: 3px 4px 5px 5px; } }
 
 @media (min-width: 1020px) {
   .bg-none-lg {
@@ -2202,7 +2206,8 @@ a, a:visited {
   .bg-black-lg {
     background: #3d464d; }
   .bg-primary-lg {
-    background: #F06D6F; } }
+    background: #fdeaea;
+    padding: 3px 4px 5px 5px; } }
 
 .navy {
   color: #1D4E89; }
