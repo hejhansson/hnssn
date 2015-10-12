@@ -10,6 +10,7 @@
 			info.find('h2').html($(this).data('client'));
 			info.find('p').html($(this).data('info'));
 			info.find('span').html('<small>Tryck på bilden för att besöka sidan.</small>');
+
 		});
 
 		$( '.portfolio_item' ).mouseout(function() {
