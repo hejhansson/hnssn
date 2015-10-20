@@ -405,7 +405,7 @@ td, th {
 -------------------------------------------------------------- */
 body {
   font-family: 'A', Helvetica, Arial, sans-serif;
-  color: gray; }
+  color: #606e78; }
 
 .tc {
   text-align: center; }
@@ -435,7 +435,7 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
   margin: 20px 0 5px 0;
   line-height: 1.3;
   letter-spacing: -.5px;
-  color: #3d464d; }
+  color: #2c3d4a; }
 
 h1, h2, h3, h4 {
   font-weight: 400; }
@@ -770,7 +770,7 @@ a, a:visited {
     padding-top: 10px;
     padding-bottom: 10px; } }
 
-@media (min-width: 992px) {
+@media (min-width: 1020px) {
   .pn-md {
     padding: 0; }
   /* all */
@@ -1337,7 +1337,7 @@ a, a:visited {
     margin-top: -10px;
     margin-bottom: -10px; } }
 
-@media (min-width: 992px) {
+@media (min-width: 1020px) {
   .mn-md {
     margin: 0; }
   /* all */
@@ -1702,7 +1702,7 @@ a, a:visited {
     border-left-style: dotted;
     border-left-width: 1px; } }
 
-@media (min-width: 992px) {
+@media (min-width: 1020px) {
   .bn-md.bn-md {
     border-style: solid;
     border-width: 0; }
@@ -1918,7 +1918,7 @@ a, a:visited {
   .bc-primary-light-sm {
     border-color: #f6a7a8; } }
 
-@media (min-width: 992px) {
+@media (min-width: 1020px) {
   .bc-navy-md {
     border-color: #1D4E89; }
   .bc-blue-md {
@@ -2135,7 +2135,7 @@ a, a:visited {
     background: #fdeaea;
     padding: 3px 4px 5px 5px; } }
 
-@media (min-width: 992px) {
+@media (min-width: 1020px) {
   .bg-none-md {
     background: none; }
   .bg-navy-md {
@@ -2355,7 +2355,7 @@ a, a:visited {
   .primary-light-sm {
     color: #f6a7a8; } }
 
-@media (min-width: 992px) {
+@media (min-width: 1020px) {
   .navy-md {
     color: #1D4E89; }
   .blue-md {
@@ -2470,7 +2470,7 @@ a, a:visited {
   .notvisible-sm {
     display: none !important; } }
 
-@media (min-width: 992px) {
+@media (min-width: 1020px) {
   .visible-md {
     display: inline-block !important; }
   .notvisible-md {
@@ -2871,9 +2871,9 @@ label {
   @media (min-width: 768px) {
     .container {
       max-width: 768px; } }
-  @media (min-width: 992px) {
+  @media (min-width: 1020px) {
     .container {
-      max-width: 992px; } }
+      max-width: 1020px; } }
   @media (min-width: 1020px) {
     .container {
       max-width: 1020px; } }
@@ -3170,7 +3170,7 @@ label {
   .col-sm-offset-12 {
     margin-left: 100%; } }
 
-@media (min-width: 992px) {
+@media (min-width: 1020px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
   .col-md-1 {
@@ -3629,45 +3629,58 @@ footer nav ul li, .sticky-footer footer nav ul li {
   .h1l {
     font-size: 22px; } }
 
-.portfolio .col-md-6 {
-  padding: 0; }
-.portfolio_item {
-  padding: 0;
-  position: relative; }
-  .portfolio_item small {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 70%;
-    height: 60%;
-    text-align: center;
-    z-index: 999;
-    color: #3d464d;
-    display: none;
-    -webkit-transition: all .2s;
-    transition: all .2s; }
-    .portfolio_item small a:hover {
-      color: #3d464d; }
-      .portfolio_item small a:hover i {
+.portfolio {
+  width: 125%;
+  margin-left: -12.5%; }
+  @media (max-width: 1248px) {
+    .portfolio {
+      width: 110%;
+      margin-left: -5%; } }
+  @media (max-width: 768px) {
+    .portfolio {
+      width: 100%;
+      margin-left: 0; } }
+  .portfolio .col-md-6 {
+    padding: 0; }
+  .portfolio_item {
+    padding: 0;
+    position: relative; }
+    .portfolio_item img:hover {
+      opacity: .8; }
+    .portfolio_item small {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 70%;
+      height: 60%;
+      text-align: center;
+      z-index: 999;
+      color: #3d464d;
+      display: none;
+      -webkit-transition: all .2s;
+      transition: all .2s; }
+      .portfolio_item small a:hover {
         color: #3d464d; }
-    .portfolio_item small a i {
-      margin-left: 5px; }
-    .portfolio_item small * {
-      color: #3d464d; }
-  .portfolio_item:hover small {
-    display: block; }
-  .portfolio_item:hover .overlay {
-    -webkit-transition: all .2s;
-    transition: all .2s;
-    position: absolute;
-    top: 9px;
-    bottom: 27px;
-    left: 14px;
-    right: 14px;
-    background: rgba(255, 255, 255, 0.7); }
+        .portfolio_item small a:hover i {
+          color: #3d464d; }
+      .portfolio_item small a i {
+        margin-left: 5px; }
+      .portfolio_item small * {
+        color: #3d464d; }
+    .portfolio_item:hover small {
+      display: block; }
+    .portfolio_item:hover .overlay {
+      -webkit-transition: all .2s;
+      transition: all .2s;
+      position: absolute;
+      top: 9px;
+      bottom: 27px;
+      left: 14px;
+      right: 14px;
+      background: rgba(255, 255, 255, 0.7); }
 
 .profil {
   position: relative; }

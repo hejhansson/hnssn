@@ -5,7 +5,7 @@
 	var info = $('.information_item');
 	var windowWidth = getWidth();
 
-	if(windowWidth > 980) {
+	if(windowWidth > 98110) {
 		$( '.portfolio_item' ).hover(function() {
 			info.find('h2').html($(this).data('client'));
 			info.find('p').html($(this).data('info'));
