@@ -399,6 +399,11 @@ td, th {
   src: url('/fonts/a_bold.eot');
   src: url('/fonts/a_bold.eot') format('embedded-opentype'), url('/fonts/a_bold.woff') format('woff'), url('/fonts/a_bold.ttf') format('truetype'), url('/fonts/a_bold.svg') format('svg'); }
 
+@font-face {
+  font-family: 'Suisse Intl';
+  font-weight: normal;
+  src: url('/fonts/suisse.otf'); }
+
 /*----------------------------------------------------------------
     TYPE
     TODO: hur type ska bete sig på mindre skärmar
@@ -3632,6 +3637,9 @@ footer nav ul li, .sticky-footer footer nav ul li {
 .portfolio {
   width: 125%;
   margin-left: -12.5%; }
+  .portfolio.active {
+    width: 100%;
+    margin-left: 0; }
   @media (max-width: 1248px) {
     .portfolio {
       width: 110%;
@@ -3645,8 +3653,36 @@ footer nav ul li, .sticky-footer footer nav ul li {
   .portfolio_item {
     padding: 0;
     position: relative; }
-    .portfolio_item img:hover {
-      opacity: .8; }
+    .portfolio_item__info {
+      margin-bottom: 100px; }
+    .portfolio_item .image {
+      position: relative; }
+      .portfolio_item .image:hover {
+        cursor: pointer;
+        opacity: .8; }
+        .portfolio_item .image:hover::after {
+          color: #3d464d;
+          font-size: 42px;
+          content: '';
+          position: absolute;
+          top: 35%;
+          /* position the top  edge of the element at the middle of the parent */
+          left: 50%;
+          /* position the left edge of the element at the middle of the parent */
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+      .portfolio_item .image.active:hover {
+        cursor: pointer;
+        opacity: .7; }
+        .portfolio_item .image.active:hover::after {
+          color: #3d464d;
+          font-size: 22px;
+          content: '✕';
+          position: absolute;
+          top: 40px;
+          right: 25px;
+          left: auto; }
     .portfolio_item small {
       position: absolute;
       top: 0;

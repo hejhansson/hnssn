@@ -23,6 +23,11 @@
 	width: 125%;
 	margin-left: -12.5%;
 
+	&.active {
+		width: 100%;;
+		margin-left: 0;
+	}
+
 	@media (max-width: 1248px) {
 		width: 110%;
 		margin-left: -5%;
@@ -41,10 +46,49 @@
 		padding: 0;
 		position: relative;
 
-		img {
+		&__info {
+				margin-bottom: 100px;
+		}
+
+
+		.image {
+			position: relative;
 			&:hover {
+				cursor: pointer;
 				opacity: .8;
+				&::after {
+					color: $black;
+					font-size: 42px;
+					content: '';
+					position: absolute;
+					top: 35%;  /* position the top  edge of the element at the middle of the parent */
+	    		left: 50%; /* position the left edge of the element at the middle of the parent */
+	    		transform: translate(-50%, -50%);
+				}
 			}
+
+			&.active {
+				&:hover {
+					cursor: pointer;
+					opacity: .7;
+					&::after {
+						color: $black;
+						font-size: 22px;
+						content: '✕';
+						position: absolute;
+						top: 40px;
+						right: 25px;
+						left: auto;
+					}
+				}
+			}
+		}
+
+
+		img {
+
+
+
 		}
 		small {
 			position: absolute;
