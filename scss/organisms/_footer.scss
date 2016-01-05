@@ -37,7 +37,21 @@ footer {
 		li {
 			margin: 0 $baseMargin 0 0 ;
 			display: block;
-			padding: 5px 0;
+			padding: 3px 0;
+			position: relative;
+
+			span {
+				@extend .linkColor;
+				font-size: 26px;
+				position: absolute;
+				left: -30px;
+				top: 17px;
+
+				@media (max-width: $screen-sm){
+					display: none;
+				}
+			}
+
 			@media #{$sm} {
 				display: inline-block;
 				padding: 20px 0;
